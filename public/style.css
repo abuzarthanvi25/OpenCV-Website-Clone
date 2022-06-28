@@ -1,0 +1,100 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+}
+
+.bgHeader{
+    background-image: -webkit-radial-gradient(left top,circle cover,rgba(100,66,255,.9) 15%,rgba(0,108,255,.9) 50%,rgba(12,180,206,.9) 85%);
+}
+
+.nav-font{
+    font-size: 14px;
+}
+
+.carousel-heading{
+    font-size: 46px;
+}
+
+.carousel-heading2{
+    font-size: 21px;
+    font-family:'Poppins', sans-serif;
+}
+
+.servicesBg{
+    background-color: #F6F7F8;
+}
+
+.servicesHeading{
+    border-bottom: 2px solid blue;
+    border-top: 0ch;
+    border-right: 0ch;
+    border-left: 0ch;
+    border-style: dashed;
+    padding-bottom: 10px;
+}
+
+.servicesCards{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.blogCardHeading{
+    color: #006cff;
+    font-size: 21px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+}
+
+.blogCardText{
+    color: #777777;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.blogBtn{
+    color: #006cff;
+    background-color: white;
+    font-size: 12px;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.bgFootlnk{
+    background-color: #f5f7fa;
+}
+
+.footLnks{
+    font-size: 19px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.footTxt{
+    font-size: 14px;
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+}
+
+.col .ftl:hover{
+    background-color: #006cff;
+    transition: all .30s ease;
+}
+
+.col .lnks:hover{
+    box-shadow: 5px 5px 15px #9d9da084;
+    transition: .20s ease
+}
+
+.blgCardHover:hover{
+    box-shadow: 10px 10px 20px #b1b1b249;
+    transition: .20s ease;
+}
+
+@media only screen and (max-width: 1000px){
+    .blogImgs{
+        margin: 10px;
+    }
+}

@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open CV Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:ital@0&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <!-- header start -->
+    <div class="bgHeader">
+        <!-- navbar start -->
+        <div>
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="https://opencv.org/wp-content/uploads/2022/05/logo.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-2">
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white nav-font p-3" aria-current="page" href="https://opencv.org/releases/">Library</a>
+                          </li>
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white nav-font p-3" aria-current="page" href="https://forum.opencv.org/">Forum</a>
+                          </li>
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white nav-font p-3" aria-current="page" href="https://opencv.org/courses/">Courses</a>
+                          </li>
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white nav-font p-3" aria-current="page" href="https://www.opencv.ai/">Services</a>
+                          </li>
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white nav-font p-3" aria-current="page" href="https://store.opencv.ai/">Store</a>
+                          </li>
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white nav-font p-3" aria-current="page" href="#">Contribute</a>
+                          </li>
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white nav-font p-3" aria-current="page" href="#">Resources</a>
+                          </li>
+                          <li class="nav-item p-1">
+                            <a class="nav-link active text-white p-3" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search pb-2" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="10" cy="10" r="7" />
+                                <line x1="21" y1="21" x2="15" y2="15" />
+                              </svg></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    <!-- navbar end -->
+
+    <!-- carousel start -->
+            <div id="carouselExampleControls" class="carousel p-0" data-bs-ride="carousel">
+                <div class="carousel-inner p-5 py-5">
+                  <div class="carousel-item active text-center">
+                    <div><h1 class="carousel-heading text-white p-3">Modelplace.ai</h1></div>
+                    <div><h4 class="carousel-heading2 text-white pb-4">The AI Model Marketplace by OpenCV</h4></div>
+                    <div><button onclick="location.href = 'https://modelplace.ai/';" class="ps-4 pe-4 pt-2 pb-2 rounded-pill bg-white fs-5" style="border: none;">Visit The Site</button></div>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <div><h1 class="carousel-heading text-white p-3">OpenCV AI Game Show</h1></div>
+                    <div><h4 class="carousel-heading2 text-white pb-4">The first ever trivia show all about artificial intelligence <br>and computer vision, sponsored by Intell<sup><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-registered" width="12" height="12" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M9 16v-8h4a2 2 0 0 1 0 4h-4m3 0l3 4" />
+                      </svg></sup> Open Vino</h4></div>
+                    <div><button onclick="location.href = 'https://opencv.org/gameshow;'" class="ps-4 pe-4 pt-2 pb-2 rounded-pill bg-white fs-5" style="border: none;">Visit The Site</button></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <br><br><br><br><br><br><br><br>
+              </div>
+    <!-- carousel end -->
+    </div>
+    <!-- header end -->
+
+    <br><br>
+
+    <!-- links start -->
+        <div class="container p-3">
+            <div class="row">
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center nter" style="width:100px;height:100px">
+                            <a href="https://github.com/opencv/opencv"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Github</div>
+
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://docs.opencv.org/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <circle cx="15" cy="15" r="3" />
+                          <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" />
+                          <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" />
+                          <line x1="6" y1="9" x2="18" y2="9" />
+                          <line x1="6" y1="12" x2="9" y2="12" />
+                          <line x1="6" y1="15" x2="8" y2="15" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Documentation</div>
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <line x1="3" y1="19" x2="21" y2="19" />
+                          <rect x="5" y="6" width="14" height="10" rx="1" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Tutorials</div>
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://forum.opencv.org/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <circle cx="12" cy="7" r="4" />
+                          <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Q&A Forums</div>
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://opencv.org/courses/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+                          <line x1="13" y1="8" x2="15" y2="8" />
+                          <line x1="13" y1="12" x2="15" y2="12" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Courses</div>
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://github.com/opencv/opencv/wiki"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-won" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M4 6l3.245 11.358a0.85 .85 0 0 0 1.624 .035l3.131 -9.393l3.131 9.393a0.85 .85 0 0 0 1.624 -.035l3.245 -11.358" />
+                          <path d="M21 10h-18" />
+                          <path d="M21 14h-18" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Wiki</div>
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://pullrequest.opencv.org/#/summary/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                          <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                          <path d="M10 13l-1 2l1 2" />
+                          <path d="M14 13l1 2l-1 2" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Build Farm</div>
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://github.com/opencv/opencv/issues/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bug" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M9 9v-1a3 3 0 0 1 6 0v1" />
+                          <path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3" />
+                          <line x1="3" y1="13" x2="7" y2="13" />
+                          <line x1="17" y1="13" x2="21" y2="13" />
+                          <line x1="12" y1="20" x2="12" y2="14" />
+                          <line x1="4" y1="19" x2="7.35" y2="17" />
+                          <line x1="20" y1="19" x2="16.65" y2="17" />
+                          <line x1="4" y1="7" x2="7.75" y2="9.4" />
+                          <line x1="20" y1="7" x2="16.25" y2="9.4" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Report a Bug</div>
+                </div>
+                <div class="col">
+                    <div class="lnks text-center border rounded-circle d-flex align-items-center justify-content-center" style="width:100px;height:100px">
+                        <a href="https://www.paypal.com/paypalme/OpenCV"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                          <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                        </svg></a>
+                    </div>
+                    <div class="p-0 text-center p-2">Donate</div>
+                </div>
+            </div>
+        </div>
+    <!-- links end -->
+
+    <br><br>
+
+    <!-- our Services start-->
+        <div class="servicesBg" style="height: 100%;width:100%">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fs-3 text-center pt-4"><span class="servicesHeading" id="dash">Our Services</span></div>
+                    </div>
+                </div>
+                
+                <br><br>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                      <div class="card servicesCards" style="width: auto; height:30rem;border-radius:20px 20px 20px 20px;border:none">
+                        <img height="230px" src="https://opencv.org/wp-content/uploads/2021/02/opencv-ai-2.jpg" class="card-img-top servicesCards" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center p-3 fs-4">OpenCV.ai</h5>
+                          <p class="card-text text-center" style="font-size: 18px;">Hire a team of AI experts now.</p>
+                          <div class="d-flex justify-content-center">
+                            <a href="https://www.opencv.ai/" class="btn btn-primary ps-4 pe-4 pt-2 pb-2">Learn More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card servicesCards" style="width: auto; height:30rem;border-radius:20px 20px 20px 20px;border:none">
+                        <img height="230px" src="https://opencv.org/wp-content/uploads/2021/02/opencv-ai-4.jpg" class="card-img-top servicesCards" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center p-3 fs-4">OpenCV AI Kit</h5>
+                          <p class="card-text text-center" style="font-size: 18px;">Learn OpenCV and Artificial Intelligence from the experts. Join the revolution</p>
+                          <div class="d-flex justify-content-center">
+                            <a href="https://opencv.org/courses" class="btn btn-primary ps-4 pe-4 pt-2 pb-2">Learn More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card servicesCards" style="width: auto; height:30rem; border-radius:20px 20px 20px 20px;border:none">
+                        <img height="230px" src="https://opencv.org/wp-content/uploads/2021/01/camer.jpg" class="card-img-top servicesCards" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center p-3 fs-4">OpenCV AI Kit</h5>
+                          <p class="card-text text-center" style="font-size: 18px;">Smart Camera with hardware accelerated neural networking and stereoscopic depth perception.</p>
+                          <div class="d-flex justify-content-center">
+                            <a href="https://store.opencv.ai/" class="btn btn-primary ps-4 pe-4 pt-2 pb-2">Learn More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <br>
+            </div>            
+        </div>
+    <!-- our Services end-->
+
+    <br><br>
+
+    <!-- members and partners start -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="fs-3 text-center pt-4"><span class="servicesHeading" id="dash">Members and Partners</span></div>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="row">
+              <div class="col-md-3 p-0">
+                <span class="p-1 memImgs"><img class="p-2" src="https://opencv.org/wp-content/uploads/elementor/thumbs/intel-1-pp2yfhw3iuqpqhys4q8a82zkh746qmzqxpxnkhds00.png" alt=""></span>
+              </div>
+              <div class="col-md-3 p-0">
+                <span class="p-1 memImgs"><img class="p-2" src="https://opencv.org/wp-content/uploads/elementor/thumbs/azure-1-pp30mgc1lutpwtobxg38e3bysb6imgndehwaiac0lc.png" alt=""></span>
+              </div>
+              <div class="col-md-3 p-0">
+                <span class="p-1 memImgs"><img class="p-2" src="https://opencv.org/wp-content/uploads/elementor/thumbs/gsc-large-pp30qno332o1ekhiw4jt2giy3732ns5la3pzs002b2.png" alt=""></span>
+              </div>
+              <div class="col-md-3 p-0">
+                <span class="p-1 memImgs"><img class="p-2" src="https://opencv.org/wp-content/uploads/elementor/thumbs/futurewei-logo-pp2zwlrw3kzq1u6zlyw44c4u3aq1jbhz2jlq5h70o6.png" alt=""></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <span class="p-3 memImgs"><img class="p-2" height="41px" width="182px" src="https://opencv.org/wp-content/uploads/2022/01/huawei_logo.webp" alt=""></span>
+              </div>
+              <div class="col-md-3">
+                <span class="p-3 memImgs"><img class="p-2" src="https://opencv.org/wp-content/uploads/2020/10/orbbec-1.png" alt=""></span>
+              </div>
+              <div class="col-md-3">
+                <span class="p-3 memImgs"><img class="p-2" height="60px" width="201px" src="https://opencv.org/wp-content/uploads/2021/02/roboflow_full_logo_default.svg" alt=""></span>
+              </div>
+              <div class="col-md-3">
+                <span class="p-3 memImgs"><img class="p-2" height="62px" width="97px" src="https://opencv.org/wp-content/uploads/2022/01/KHADAS.png" alt=""></span>
+              </div>
+            </div>
+        </div>
+        </div>
+    <!-- members and partners end -->
+
+    <br><br>
+
+    <!-- our blogs start -->
+        <div class="servicesBg">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="fs-3 text-center pt-4"><span class="servicesHeading" id="dash">Our Blogs</span></div>
+                  <br><br>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 blogImgs">
+                  <div class="blgCardHover card" style="width: auto;height:35rem">
+                    <a href="https://opencv.org/announcing-the-opencv-spatial-ai-contest-popular-vote-winner/"><img width="363px" height="222px" src="https://opencv.org/wp-content/uploads/2022/06/Popular-Vote-Winner-768x432.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                      <h5 class="card-title blogCardHeading">Announcing The OpenCV Spatial AI Contest Popular Vote Winner	</h5>
+                      <p class="card-text blogCardText">The contest that began last year is nearing the finish line- with the announcement of our final prize, the winner of the Popular Vote as</p>
+                      <a href="https://opencv.org/announcing-the-opencv-spatial-ai-contest-popular-vote-winner/" class="blogBtn">READ MORE<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="7 7 12 12 7 17" />
+                        <polyline points="13 7 18 12 13 17" />
+                      </svg></a>
+                    </div>
+                    <div class="blogBtn border-top text-center fw-normal">
+                      June 13, 2022
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 blogImgs">
+                  <div class="blgCardHover card" style="width: auto;height:35rem">
+                    <div style="background-image: linear-gradient(0deg,rgba(0,0,0,0.35),transparent 75%);">
+                      <a href="https://opencv.org/opencv-4-6-0/"><img width="363px" height="222px" src="https://opencv.org/wp-content/uploads/2021/08/OpenCV_logo_black_.png" class="card-img-top" alt="..."></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title blogCardHeading">OpenCV 4.6.0 Is Now Available!	</h5>
+                      <p class="card-text blogCardText">OpenCV 4.6.0 have been released</p>
+                      <a href="https://opencv.org/opencv-4-6-0/" class="blogBtn">READ MORE<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="7 7 12 12 7 17" />
+                        <polyline points="13 7 18 12 13 17" />
+                      </svg></a>
+                    </div>
+                    <div class="blogBtn border-top text-center fw-normal">
+                      June 7, 2022
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 blogImgs">
+                  <div class="blgCardHover card" style="width: auto;height:35rem">
+                    <a href="https://opencv.org/meet-the-judges-for-opencv-spatial-ai-contest/"><img width="363px" height="222px" src="https://opencv.org/wp-content/uploads/2022/04/Finalist-Judges-Announcement-1-768x480.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                      <h5 class="card-title blogCardHeading">Meet The Judges For OpenCV Spatial AI Contest</h5>
+                      <p class="card-text blogCardText">After the long build phase final judging for OpenCV Spatial AI Contest is underway. The top 10 teams have been selected and OpenCV has brought</p>
+                      <a href="https://opencv.org/meet-the-judges-for-opencv-spatial-ai-contest/" class="blogBtn">READ MORE<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006cff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="7 7 12 12 7 17" />
+                        <polyline points="13 7 18 12 13 17" />
+                      </svg></a>
+                    </div>
+                    <div class="blogBtn border-top text-center fw-normal">
+                      April 15, 2022
+                    </div>
+                  </div>
+                  <br>
+                </div>
+            </div>
+          </div>
+          <br><br>
+        </div>
+    <!-- our blogs end -->
+
+    <!-- news and articles btn start -->
+        <div class="servicesBg">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center">
+                      <button onclick="location.href = 'https://opencv.org/news';" class="ps-3 pe-3 pt-3 pb-3 border-0 bg-primary text-white">See all news and articles</button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    <!-- news and articles btn end -->
+
+    <!-- open source bar start  -->
+        <div class="bgHeader p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <div class="d-flex justify-content-center p-2"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                          <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                          <line x1="3" y1="6" x2="3" y2="19" />
+                          <line x1="12" y1="6" x2="12" y2="19" />
+                          <line x1="21" y1="6" x2="21" y2="19" />
+                        </svg></div>
+                        <div class="fs-3 text-white text-center">
+                          Open Source
+                        </div>
+                        <div class="text-white p-3" style="font-size: 18px;">
+                          OpenCV is open source and released under the BSD 3-Clause License. It is free for commercial use.
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="d-flex justify-content-center p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rocket" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+                            <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+                            <circle cx="15" cy="9" r="1" />
+                          </svg>
+                        </div>
+                        <div class="fs-3 text-white text-center">Optimized</div>
+                        <div class="text-white p-3" style="font-size: 18px;">OpenCV is a highly optimized library with focus on real-time applications.</div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="d-flex justify-content-center p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices-2" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 15h-6a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h6" />
+                            <rect x="13" y="4" width="8" height="16" rx="1" />
+                            <line x1="7" y1="19" x2="10" y2="19" />
+                            <line x1="17" y1="8" x2="17" y2="8.01" />
+                            <circle cx="17" cy="16" r="1" />
+                            <line x1="9" y1="15" x2="9" y2="19" />
+                          </svg>
+                        </div>
+                        <div class="fs-3 text-white text-center">Cross Platform</div>
+                        <div class="text-white p-3" style="font-size: 18px;">C++, Python and Java interfaces support Linux, MacOS, Windows, iOS, and Android.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- open source bar end -->
+
+    <br><br>
+
+    <!-- footer start  -->
+      <div class="foot">
+        <div class="container p-3 pb-5">
+          <div class="row">
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <rect x="3" y="5" width="18" height="14" rx="2" />
+                      <polyline points="3 7 12 13 21 7" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Email</div>
+
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://open-cv.slack.com/join/shared_invite/zt-59r70dt1-iG2WZ3gG2WbnMnGZEYfcSQ#/shared-invite/email"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <line x1="5" y1="9" x2="19" y2="9" />
+                      <line x1="5" y1="15" x2="19" y2="15" />
+                      <line x1="11" y1="4" x2="7" y2="20" />
+                      <line x1="17" y1="4" x2="13" y2="20" />
+                    </svg></a>  
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Slack</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://github.com/opencv"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Github</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://www.facebook.com/opencvlibrary"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Facebook</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://twitter.com/opencvlibrary"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Twitter</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://www.youtube.com/user/opencvdev"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="32" height="32" viewBox="0 0 24 24" stroke-width="3" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <rect x="3" y="5" width="18" height="14" rx="4" />
+                      <path d="M10 9l5 3l-5 3z" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">YouTube</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://en.wikipedia.org/wiki/OpenCV"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-won" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M4 6l3.245 11.358a0.85 .85 0 0 0 1.624 .035l3.131 -9.393l3.131 9.393a0.85 .85 0 0 0 1.624 -.035l3.245 -11.358" />
+                      <path d="M21 10h-18" />
+                      <path d="M21 14h-18" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Wikipedia</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://forum.opencv.org/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                      <line x1="12" y1="12" x2="12" y2="12.01" />
+                      <line x1="8" y1="12" x2="8" y2="12.01" />
+                      <line x1="16" y1="12" x2="16" y2="12.01" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Forum</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://sourceforge.net/projects/opencvlibrary/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="32" height="32" viewBox="0 0 24 24" stroke-width="3" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                      <polyline points="7 11 12 16 17 11" />
+                      <line x1="12" y1="4" x2="12" y2="16" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">Source Forge</div>
+              </div>
+              <div class="col">
+                  <div class="ftl text-center border rounded-circle d-flex align-items-center justify-content-center bgFootlnk" style="width:80px;height:80px">
+                    <a href="https://web.libera.chat/#opencv"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke=" #696969" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                      <line x1="12" y1="12" x2="12" y2="12.01" />
+                      <line x1="8" y1="12" x2="8" y2="12.01" />
+                      <line x1="16" y1="12" x2="16" y2="12.01" />
+                    </svg></a>
+                  </div>
+                  <div class="p-0 text-center p-2" style="font-size:13px">IRC #opencv</div>
+              </div>
+          </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="container border-bottom">
+            <div class="row">
+                <div class="col-md-3">
+                  <div class="footLnks">General Link</div>
+                  <div>
+                    <div class="footTxt">About</div>
+                    <div class="footTxt">Releases</div>
+                    <div class="footTxt">License</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="footLnks">Courses</div>
+                  <div>
+                    <div class="footTxt">Computer Vision I</div>
+                    <div class="footTxt">Computer Vision II</div>
+                    <div class="footTxt">Deep Learning with PyTorch</div>
+                    <div class="footTxt">OpenCV For Begginners</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="footLnks">Partnership</div>
+                  <div>
+                    <div class="footTxt">Intel, OpenCV's Platinum Member</div>
+                    <div class="footTxt">Gold Membership</div>
+                    <div class="footTxt">Development Partnership</div>
+                    <div class="footTxt">CUDA</div>
+                    <div class="footTxt">ARM</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="footLnks">Resources</div>
+                  <div>
+                    <div class="footTxt">News</div>
+                    <div class="footTxt">Books</div>
+                    <div class="footTxt">Podcast</div>
+                    <div class="footTxt">Media Kit</div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                      <div class="text-center p-2 text-secondary">Copyright © 2022 , OpenCV team</div>
+                      <div class="text-center"><span class="p-2"><a style="text-decoration: none;" href="https://opencv.org/contact-us/">Contact Us</a></span> | <span class="p-2"><a style="text-decoration: none;" href="https://opencv.org/privacy-policy/">Privacy Policy</a></span> | <span class="p-2"><a style="text-decoration: none;" href="https://opencv.org/terms-and-conditions/">Terms & Conditions</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+      </div>
+    <!-- footer end  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html> 
